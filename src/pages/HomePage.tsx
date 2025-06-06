@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection/HeroSection"
 import ServiceList from "../components/ServiceList/ServiceList"
 import AboutSection from "../components/OtherSection/AboutSection"
 import ContactSection from "../components/ContactSection/ContactSection"
+import RecommendedSection from "../components/OtherSection/RecommendedSection"
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <ServiceList/>
       <LookupSection/>
       <AboutSection/>
+      <RecommendedSection/>
       <ContactSection/>
     </div>
   )
