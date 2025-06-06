@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 // @ts-ignore
 import 'swiper/css/navigation';
-import "./index.css"
+import './index.css';
 import slide1 from '../../assets/imgs/banner-01.jpg';
 import slide2 from '../../assets/imgs/banner-02.jpg';
 import slide3 from '../../assets/imgs/banner-03.jpg';
@@ -38,7 +38,7 @@ const HeroSection = () => {
       navigation
       loop
       speed={1600}
-      className="w-full h-[80vh]"
+      className="w-full h-[60vh] md:h-[80vh]"
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
@@ -46,12 +46,12 @@ const HeroSection = () => {
             className="w-full h-full bg-center bg-cover flex items-center justify-center relative"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className="bg-black/50 w-full h-full absolute top-0 left-0 z-0" />
-            <div className="text-white text-center z-10 px-4">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+            <div className="bg-black/60 backdrop-blur-sm w-full h-full absolute top-0 left-0 z-0" />
+            <div className="text-white text-center z-10 px-4 max-w-3xl mx-auto">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-xl">
                 {slide.title}
               </h1>
-              <p className="text-lg md:text-2xl drop-shadow-sm">{slide.subtitle}</p>
+              <p className="text-lg md:text-2xl drop-shadow-md">{slide.subtitle}</p>
             </div>
           </div>
         </SwiperSlide>
