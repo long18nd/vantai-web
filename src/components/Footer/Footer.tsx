@@ -2,7 +2,6 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white text-sm">
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Giới thiệu */}
         <div>
           <h2 className="text-lg font-semibold mb-4">VẬN TẢI BẮC NAM</h2>
           <p>
@@ -10,7 +9,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Thông tin liên hệ */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Thông tin liên hệ</h2>
           <ul className="space-y-2">
@@ -21,7 +19,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Dịch vụ */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Dịch vụ chính</h2>
           <ul className="space-y-2">
@@ -33,7 +30,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="bg-gray-900 text-center py-4 text-gray-400 text-xs">
         © {new Date().getFullYear()} Vận Tải Bắc Nam. All rights reserved.
       </div>

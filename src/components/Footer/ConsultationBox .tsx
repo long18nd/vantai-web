@@ -1,6 +1,17 @@
 import Img from "../../assets/imgs/bg_top-footer.jpg";
 
 const ConsultationBox = () => {
+
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth', 
+        block: 'start',     
+      });
+    }
+  };
+
   return (
     <div
       className="relative bg-center bg-cover bg-no-repeat h-[700px] md:h-[900px] lg:h-[1000px]"
@@ -15,7 +26,10 @@ const ConsultationBox = () => {
             Nhanh hơn, chính xác hơn, theo dõi vận chuyển dễ dàng hơn<br />
             và còn nhiều hơn thế nữa
           </p>
-          <button className="w-full sm:w-auto bg-orange-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-orange-600 transition">
+          <button
+            onClick={handleScrollToContact} 
+            className="w-full sm:w-auto bg-orange-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-orange-600 transition"
+          >
             NHẬN TƯ VẤN NGAY
           </button>
         </div>
