@@ -44,18 +44,18 @@ const ContactSection = () => {
 
           {/* Email Subscription */}
           <h3 className="text-lg font-medium mt-6">
-            Dành cho khách hàng muốn nhận thông tin và cập nhật bảng giá tốt nhất
-          </h3>
-          <div className="bg-[#141414] p-4 flex flex-col sm:flex-row gap-2">
-            <input
-              placeholder="Nhập email"
-              type="email"
-              className="w-full h-10 px-3 bg-white text-sm rounded"
-            />
-            <button className="w-full sm:w-auto h-10 bg-amber-600 text-white px-6 rounded">
-              Đăng ký ngay
-            </button>
-          </div>
+  Dành cho khách hàng muốn nhận thông tin và cập nhật bảng giá tốt nhất
+</h3>
+<div className="bg-[#141414] p-4 flex flex-col sm:flex-row sm:items-center gap-3 mt-2 rounded-md">
+  <input
+    placeholder="Nhập email"
+    type="email"
+    className="flex-1 px-4 py-3 bg-white text-sm rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
+  />
+  <button className="bg-amber-600 text-white px-6 py-3 rounded w-full sm:w-auto hover:bg-amber-700 transition-colors">
+    Đăng ký ngay
+  </button>
+</div>
 
           {/* Background image */}
           <div className="mt-6">
