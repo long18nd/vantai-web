@@ -8,4 +8,5 @@ export default interface Contact {
   weight: string;
   fromAddress: string;
   toAddress: string;
+  note?: string;
 }

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
+import SidebarAdmin from "./sidebar/SidebarAdmin.tsx";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import SidebarAdmin from "./Layout/sidebar/SidebarAdmin";
 
 const LayoutAdmin = () => {
   const [isOpenSidebar, setIsOpenSidebar] = useState<boolean>(false);
