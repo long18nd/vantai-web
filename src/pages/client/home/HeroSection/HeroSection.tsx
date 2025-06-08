@@ -7,9 +7,9 @@ import "swiper/css/pagination";
 // @ts-ignore
 import "swiper/css/navigation";
 import "./hero_section.css";
-import slide1 from "../../../assets/imgs/banner-01.jpg";
-import slide2 from "../../../assets/imgs/banner-02.jpg";
-import slide3 from "../../../assets/imgs/banner-03.jpg";
+import slide1 from "../../../../assets/imgs/banner-01.jpg";
+import slide2 from "../../../../assets/imgs/banner-02.jpg";
+import slide3 from "../../../../assets/imgs/banner-03.jpg";
 
 const slides = [
   {

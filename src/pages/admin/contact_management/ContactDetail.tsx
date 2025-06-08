@@ -19,7 +19,6 @@ const ContactDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // ✅ Thay URL bằng API thật của bạn
     fetch(`http://localhost:3001/api/contacts/${id}`)
       .then((res) => res.json())
       .then((data) => {

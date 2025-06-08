@@ -1,9 +1,9 @@
 import ServiceCard from "./ServiceCard.tsx";
 
-import vc_oto from "../../../assets/imgs/vc_nhanh.png";
-import vc_xemay from "../../../assets/imgs/vc_xemay.png";
-import vc_tietkiem from "../../../assets/imgs/vc_tietkiem.png";
-import vc_nha from "../../../assets/imgs/dv_logistics.png";
+import vc_oto from "../../../../assets/imgs/vc_nhanh.png";
+import vc_xemay from "../../../../assets/imgs/vc_xemay.png";
+import vc_tietkiem from "../../../../assets/imgs/vc_tietkiem.png";
+import vc_nha from "../../../../assets/imgs/dv_logistics.png";
 
 const ListService = [
   {

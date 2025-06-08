@@ -1,11 +1,11 @@
 import { useState } from "react";
-import PhoneIcon from "../../../assets/imgs/icon_phone.png";
-import TimeIcon from "../../../assets/imgs/icon_time.png";
-import SupIcon from "../../../assets/imgs/icon_support.png";
-import MailIcon from "../../../assets/imgs/icon_phone.png";
-import Background from "../../../assets/imgs/background.png";
-import type Contact from "../../../type/contact";
-import Toast from "../../ui/Toast/Toast.tsx";
+import PhoneIcon from "../../../../assets/imgs/icon_phone.png";
+import TimeIcon from "../../../../assets/imgs/icon_time.png";
+import SupIcon from "../../../../assets/imgs/icon_support.png";
+import MailIcon from "../../../../assets/imgs/icon_phone.png";
+import Background from "../../../../assets/imgs/background.png";
+import type Contact from "../../../../type/contact";
+import Toast from "../../../../components/ui/toast/Toast.tsx";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState<Omit<Contact, "id" | "createdAt">>({

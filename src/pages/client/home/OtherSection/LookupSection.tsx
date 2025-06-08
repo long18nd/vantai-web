@@ -1,4 +1,4 @@
-import bgImg from "../../../assets/imgs/bg-tra-cuu.png";
+import bgImg from "../../../../assets/imgs/bg-tra-cuu.png";
 
 const LookupSection = () => {
   return (
