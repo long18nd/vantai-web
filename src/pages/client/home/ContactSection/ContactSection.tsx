@@ -169,7 +169,7 @@ const ContactSection = () => {
             </div>
             <div className="flex items-center">
               <img className="mr-4 w-6 h-6" src={MailIcon} alt="Mail" />
-              <span>quylongtransport@gmail.com</span>
+              <span>khanhviet@gmail.com</span>
             </div>
           </div>
 

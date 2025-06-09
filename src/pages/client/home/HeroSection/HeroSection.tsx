@@ -1,11 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-// @ts-ignore
-import "swiper/css";
-// @ts-ignore
-import "swiper/css/pagination";
-// @ts-ignore
-import "swiper/css/navigation";
 import "./hero_section.css";
 import slide1 from "../../../../assets/imgs/banner-01.jpg";
 import slide2 from "../../../../assets/imgs/banner-02.jpg";

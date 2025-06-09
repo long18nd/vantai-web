@@ -1,4 +1,4 @@
-import img from "../../../../assets/imgs/banner-van-tai-bac-nam.jpg";
+import img from "../../../../assets/imgs/banner-van-tai-kv.jpg";
 import background from "../../../../assets/imgs/background1.png";
 import iCon1 from "../../../../assets/imgs/icon1.png";
 import iCon2 from "../../../../assets/imgs/icon2.png";

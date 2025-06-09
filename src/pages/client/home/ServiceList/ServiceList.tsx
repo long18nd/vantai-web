@@ -9,7 +9,7 @@ const ListService = [
   {
     title: "Vận chuyển ô tô",
     content:
-      "Vận chuyển ô tô Bắc Nam bằng tàu hỏa là một trong những dịch vụ chủ lực của Quy Long Logistics...",
+      "Vận chuyển ô tô Bắc Nam bằng tàu hỏa là một trong những dịch vụ chủ lực của Khánh Việt Logistics...",
     img: vc_oto,
   },
   {
@@ -27,7 +27,7 @@ const ListService = [
   {
     title: "Vận chuyển nhà",
     content:
-      "Dịch vụ chuyển nhà trọn gói Bắc Nam là một trong những dịch vụ chủ lực của Quy Long Logistics...",
+      "Dịch vụ chuyển nhà trọn gói Bắc Nam là một trong những dịch vụ chủ lực của Khánh Việt Logistics...",
     img: vc_nha,
   },
 ];

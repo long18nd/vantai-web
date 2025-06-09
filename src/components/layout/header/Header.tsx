@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../../assets/imgs/logo-quy-long.jpg";
+import Logo from "../../../assets/imgs/logo-khanh-viet.jpg";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-          <a href="/public" className="hover:text-blue-600">
+          <a href="/" className="hover:text-blue-600">
             Trang chủ
           </a>
           <a href="/gioi-thieu" className="hover:text-blue-600">
