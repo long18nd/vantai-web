@@ -28,7 +28,7 @@ const ConsultationBox = () => {
           </p>
           <button
             onClick={handleScrollToContact}
-            className="w-full sm:w-auto bg-orange-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-orange-600 transition"
+            className="w-full sm:w-auto bg-blue-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-blue-600 transition"
           >
             NHẬN TƯ VẤN NGAY
           </button>

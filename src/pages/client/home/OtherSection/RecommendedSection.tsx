@@ -84,7 +84,7 @@ const RecommendedSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl font-semibold text-center mb-10">
-          <span className="text-orange-400 font-bold text-3xl">1001+</span> LÝ
+          <span className="text-blue-400 font-bold text-3xl">1001+</span> LÝ
           DO NÊN CHỌN VẬN TẢI BẮC NAM
         </h2>
 

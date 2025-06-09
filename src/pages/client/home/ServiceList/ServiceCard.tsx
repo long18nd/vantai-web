@@ -14,7 +14,7 @@ const ServiceCard = ({ content, img, title }: ServiceCardProps) => {
           className="max-h-full max-w-full object-contain"
         />
       </div>
-      <h3 className="text-amber-600 text-lg font-semibold text-center mb-4">
+      <h3 className="text-blue-600 text-lg font-semibold text-center mb-4">
         {title}
       </h3>
       <p className="text-gray-600 text-sm text-center leading-relaxed">

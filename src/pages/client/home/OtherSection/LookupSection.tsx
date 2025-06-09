@@ -70,7 +70,7 @@ const LookupSection = () => {
             <option>Không</option>
           </select>
 
-          <button className="bg-orange-500 hover:bg-orange-600 text-white w-full py-2 rounded font-semibold">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white w-full py-2 rounded font-semibold">
             Tra cứu ngay
           </button>
         </div>

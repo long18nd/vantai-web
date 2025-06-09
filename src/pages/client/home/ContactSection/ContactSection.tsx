@@ -183,7 +183,7 @@ const ContactSection = () => {
               type="email"
               className="flex-1 px-4 py-3 bg-white text-sm rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
             />
-            <button className="bg-amber-600 text-white px-6 py-3 rounded w-full sm:w-auto hover:bg-amber-700 transition-colors">
+            <button className="bg-blue-600 text-white px-6 py-3 rounded w-full sm:w-auto hover:bg-blue-700 transition-colors">
               Nhận tư vấn ngay
             </button>
           </div>
@@ -298,7 +298,7 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-amber-600 text-white py-2 rounded mt-2 hover:bg-amber-700 transition-colors"
+              className="w-full bg-blue-600 text-white py-2 rounded mt-2 hover:bg-blue-700 transition-colors"
             >
               Nhận tư vấn ngay
             </button>
