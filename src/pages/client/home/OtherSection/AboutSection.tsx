@@ -31,10 +31,10 @@ const AboutSection = () => {
         {/* Phần bên trái */}
         <div className="w-full md:w-1/2">
           <h1 className="text-3xl font-medium text-center mb-6">
-            GIỚI THIỆU VẬN TẢI BẮC NAM
+            GIỚI THIỆU VẬN TẢI KHÁNH VIỆT
           </h1>
           <p className="text-base text-justify mb-6">
-            Vận Tải Bắc Nam tự hào là đơn vị đi đầu về áp dụng công nghệ vào
+            Vận Tải Khánh Việt tự hào là đơn vị đi đầu về áp dụng công nghệ vào
             lĩnh vực vận chuyển nhằm mang tới trải nghiệm đột phá trong vận hành
             và quản lý đơn hàng siêu dễ dàng. Mong mỏi của chúng tôi khi áp dụng
             công nghệ là nhằm mang tới trải nghiệm logistics tốt nhất cho khách

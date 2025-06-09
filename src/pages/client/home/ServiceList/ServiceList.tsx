@@ -22,13 +22,13 @@ const ListService = [
     title: "Vận chuyển tiết kiệm",
     content:
       "Dịch vụ giao hàng tiêu chuẩn với giá cước cực rẻ nhằm tiết kiệm tối đa chi phí cho doanh nghiệp của bạn.",
-    img: vc_tietkiem,
+    img: vc_nha,
   },
   {
     title: "Vận chuyển nhà",
     content:
       "Dịch vụ chuyển nhà trọn gói Bắc Nam là một trong những dịch vụ chủ lực của Khánh Việt Logistics...",
-    img: vc_nha,
+    img: vc_tietkiem,
   },
 ];
 

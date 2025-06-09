@@ -19,12 +19,12 @@ const ConsultationBox = () => {
       <div className="flex items-center justify-center h-full">
         <div className="max-w-xl mx-auto bg-[#f7f4e3] bg-opacity-90 backdrop-blur-md rounded-xl shadow-2xl px-6 md:px-12 py-10 text-center z-10">
           <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-            Thử trải nghiệm dịch vụ vận chuyển hoàn toàn khác
+            Vận tải là yếu tố then chốt để kết nối và phát triển
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            Nhanh hơn, chính xác hơn, theo dõi vận chuyển dễ dàng hơn
-            <br />
-            và còn nhiều hơn thế nữa
+            Chúng tôi cam kết mang đến dịch vụ vận tải hiệu quả, an toàn và
+            <br /> đáng tin cậy, giúp bạn đạt được mục tiêu một cách nhanh chóng
+            và dễ dàng
           </p>
           <button
             onClick={handleScrollToContact}
