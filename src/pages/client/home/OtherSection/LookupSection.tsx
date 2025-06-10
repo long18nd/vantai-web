@@ -136,7 +136,7 @@ const LookupSection = () => {
         minHeight: "900px",
       }}
     >
-      <div className="container mx-auto px-4 h-full flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto px-4 h-full flex flex-col md:flex-row justify-between">
         {/* Left: Text giới thiệu */}
         <div className="md:w-1/2 text-white text-center md:text-left mb-10 md:mb-0">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">

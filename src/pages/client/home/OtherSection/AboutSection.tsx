@@ -34,12 +34,12 @@ const AboutSection = () => {
             GIỚI THIỆU VẬN TẢI KHÁNH VIỆT
           </h1>
           <p className="text-base text-justify mb-6">
-            Vận Tải Khánh Việt tự hào là đơn vị đi đầu về áp dụng công nghệ vào
-            lĩnh vực vận chuyển nhằm mang tới trải nghiệm đột phá trong vận hành
-            và quản lý đơn hàng siêu dễ dàng. Mong mỏi của chúng tôi khi áp dụng
-            công nghệ là nhằm mang tới trải nghiệm logistics tốt nhất cho khách
-            hàng cũng tối ưu để giảm cước vận chuyển hiện đang quá cao so với
-            các nước trong khu vực.
+            Vận Tải Khánh Việt tự hào là đơn vị tiên phong trong việc ứng dụng
+            công nghệ vào lĩnh vực vận chuyển, mang đến trải nghiệm vận hành đột
+            phá và tối ưu hóa quy trình vận chuyển. Mục tiêu của chúng tôi là
+            mang lại dịch vụ logistics vượt trội, đồng thời giảm thiểu chi phí
+            vận chuyển, giúp khách hàng tiết kiệm hơn trong khi vẫn đảm bảo hiệu
+            quả cao.
           </p>
           <img className="rounded-lg shadow-md" src={img} alt="Giới thiệu" />
         </div>

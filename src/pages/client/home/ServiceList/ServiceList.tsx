@@ -5,6 +5,8 @@ import vc_xemay from "../../../../assets/imgs/vc_xemay.png";
 import vc_tietkiem from "../../../../assets/imgs/vc_tietkiem.png";
 import vc_nha from "../../../../assets/imgs/dv_logistics.png";
 
+import "./service.css";
+
 const ListService = [
   {
     title: "Vận chuyển ô tô",

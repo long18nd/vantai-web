@@ -3,11 +3,12 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white text-sm">
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h2 className="text-lg font-semibold mb-4">VẬN TẢI BẮC NAM</h2>
+          <h2 className="text-lg font-semibold mb-4">VẬN TẢI KHÁNH VIỆT</h2>
           <p>
-            Công ty TNHH Vận Tải Bắc Nam chuyên cung cấp dịch vụ vận chuyển hàng
-            hóa uy tín, chuyên nghiệp, giá rẻ trên toàn quốc. Đội ngũ xe tải đa
-            dạng, nhận chở hàng lẻ, hàng nguyên chuyến nhanh chóng và an toàn.
+            Công ty TNHH Vận Tải KHÁNH VIỆT chuyên cung cấp dịch vụ vận chuyển
+            hàng hóa uy tín, chuyên nghiệp, giá rẻ trên toàn quốc. Đội ngũ xe
+            tải đa dạng, nhận chở hàng lẻ, hàng nguyên chuyến nhanh chóng và an
+            toàn.
           </p>
         </div>
 
@@ -44,7 +45,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>
               <a href="/van-chuyen-hang-hoa" className="hover:text-red-400">
-                Vận chuyển hàng hóa Bắc Nam
+                Vận chuyển hàng hóa
               </a>
             </li>
             <li>
@@ -67,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-gray-900 text-center py-4 text-gray-400 text-xs">
-        © {new Date().getFullYear()} Vận Tải Bắc Nam. All rights reserved.
+        © {new Date().getFullYear()} Vận Tải Khánh Việt. All rights reserved.
       </div>
     </footer>
   );

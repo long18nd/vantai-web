@@ -36,7 +36,7 @@ const SidebarAdmin = ({ onLinkClick }: { onLinkClick?: () => void }) => {
                   : ""
               }`}
             >
-              Khách hàng liên hệ
+              Quản lý liên hệ
             </Link>
             <Link
               to="/admin/quan-ly-tin-tuc"
@@ -47,7 +47,40 @@ const SidebarAdmin = ({ onLinkClick }: { onLinkClick?: () => void }) => {
                   : ""
               }`}
             >
-              Tin tức
+              Quản lý bài viết
+            </Link>
+            <Link
+              to="/admin/quan-ly-tin-tuc"
+              onClick={onLinkClick}
+              className={`block px-2 py-1 rounded hover:bg-gray-700 ${
+                isActive("/admin/quan-ly-tin-tuc")
+                  ? "bg-gray-700 font-semibold"
+                  : ""
+              }`}
+            >
+              Quản lý dịch vụ
+            </Link>
+            <Link
+              to="/admin/quan-ly-tin-tuc"
+              onClick={onLinkClick}
+              className={`block px-2 py-1 rounded hover:bg-gray-700 ${
+                isActive("/admin/quan-ly-tin-tuc")
+                  ? "bg-gray-700 font-semibold"
+                  : ""
+              }`}
+            >
+              Quản lý giới thiệu công ty
+            </Link>
+            <Link
+              to="/admin/quan-ly-tin-tuc"
+              onClick={onLinkClick}
+              className={`block px-2 py-1 rounded hover:bg-gray-700 ${
+                isActive("/admin/quan-ly-tin-tuc")
+                  ? "bg-gray-700 font-semibold"
+                  : ""
+              }`}
+            >
+              Quản lý banner / slideshow
             </Link>
           </div>
         )}
@@ -55,7 +88,7 @@ const SidebarAdmin = ({ onLinkClick }: { onLinkClick?: () => void }) => {
 
       <div className="mt-4">
         <Link
-          to="/admin"
+          to="/admin/thong-ke"
           onClick={onLinkClick}
           className={`block px-2 py-2 rounded hover:bg-gray-700 ${
             isActive("/admin") ? "bg-gray-700 font-semibold" : ""

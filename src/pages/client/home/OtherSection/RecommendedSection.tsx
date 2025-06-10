@@ -18,7 +18,7 @@ const features = [
           <strong>Đà Nẵng</strong> – nhanh hơn 12 giờ
         </p>
         <p>
-          <strong>Hà Nội</strong> – nhanh hơn 24 giờ
+          <strong>Hồ Chí Minh</strong> – nhanh hơn 24 giờ
         </p>
       </>
     ),
@@ -44,12 +44,15 @@ const features = [
   },
   {
     icon: <FaClipboardList size={28} />,
-    title: "Tra cứu, quản lý dễ dàng",
+    title: "Quản lý vận chuyển hiệu quả",
     content: (
       <>
-        <p>Tra cứu giá cước tự động</p>
-        <p>Theo dõi đơn hàng theo thời gian thực</p>
-        <p>Xóa tan nỗi lo đơn hàng thất lạc</p>
+        <p>
+          Cung cấp thông tin chi tiết về thời gian giao hàng và lộ trình vận
+          chuyển
+        </p>
+        <p>Đảm bảo sự minh bạch trong từng khâu giao nhận</p>
+        <p>Giúp tối ưu thời gian và chi phí cho khách hàng</p>
       </>
     ),
   },
@@ -58,7 +61,7 @@ const features = [
     title: "Tiết kiệm chi phí",
     content: (
       <>
-        <p>Loại bỏ công đoạn hỏi giá, tình trạng đơn</p>
+        <p>Loại bỏ các bước không cần thiết trong quá trình vận chuyển</p>
         <p>Giảm chi phí cho doanh nghiệp</p>
       </>
     ),
@@ -85,7 +88,7 @@ const RecommendedSection = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl font-semibold text-center mb-10">
           <span className="text-blue-400 font-bold text-3xl">1001+</span> LÝ DO
-          NÊN CHỌN VẬN TẢI BẮC NAM
+          NÊN CHỌN VẬN TẢI KHÁNH VIỆT
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
