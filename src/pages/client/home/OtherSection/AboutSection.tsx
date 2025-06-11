@@ -28,7 +28,6 @@ const AboutSection = () => {
       className="py-16"
     >
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex flex-col md:flex-row gap-12">
-        {/* Phần bên trái */}
         <div className="w-full md:w-1/2">
           <h1 className="text-3xl font-medium text-center mb-6">
             GIỚI THIỆU VẬN TẢI KHÁNH VIỆT
@@ -44,7 +43,6 @@ const AboutSection = () => {
           <img className="rounded-lg shadow-md" src={img} alt="Giới thiệu" />
         </div>
 
-        {/* Phần bên phải */}
         <div className="w-full md:w-1/2 flex flex-col items-center">
           <h1 className="text-3xl font-medium text-center mb-6">
             SỐ LIỆU THỐNG KÊ

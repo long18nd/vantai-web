@@ -17,7 +17,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>Địa chỉ: Số 556 Quốc Lộ 1A, Bình Hưng Hòa, Bình Tân, TP.HCM</li>
             <li>
-              Hotline:{" "}
+              Hotline:
               <a href="tel:0971703011" className="text-red-400">
                 0971 703 011
               </a>

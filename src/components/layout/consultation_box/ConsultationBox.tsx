@@ -1,15 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import Img from "../../../assets/imgs/bg_top-footer.jpg";
 
 const ConsultationBox = () => {
-  const handleScrollToContact = () => {
-    const contactSection = document.getElementById("contact-section");
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
+  const navigate = useNavigate();
 
   return (
     <div
@@ -27,7 +20,7 @@ const ConsultationBox = () => {
             và dễ dàng
           </p>
           <button
-            onClick={handleScrollToContact}
+            onClick={() => navigate("/lien-he")}
             className="w-full sm:w-auto bg-blue-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-blue-600 transition"
           >
             NHẬN TƯ VẤN NGAY

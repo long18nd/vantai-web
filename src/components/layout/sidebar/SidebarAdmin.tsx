@@ -39,10 +39,10 @@ const SidebarAdmin = ({ onLinkClick }: { onLinkClick?: () => void }) => {
               Quản lý liên hệ
             </Link>
             <Link
-              to="/admin/quan-ly-tin-tuc"
+              to="/admin/quan-ly-bai-viet"
               onClick={onLinkClick}
               className={`block px-2 py-1 rounded hover:bg-gray-700 ${
-                isActive("/admin/quan-ly-tin-tuc")
+                isActive("/admin/quan-ly-bai-viet")
                   ? "bg-gray-700 font-semibold"
                   : ""
               }`}

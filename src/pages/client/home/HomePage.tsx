@@ -1,19 +1,19 @@
-import LookupSection from "./OtherSection/LookupSection.tsx";
 import HeroSection from "./HeroSection/HeroSection.tsx";
 import ServiceList from "./ServiceList/ServiceList.tsx";
 import AboutSection from "./OtherSection/AboutSection.tsx";
-import ContactSection from "./ContactSection/ContactSection.tsx";
 import RecommendedSection from "./OtherSection/RecommendedSection.tsx";
+import InformationSection from "./ContactSection/InformationSection.tsx";
+import ContactSection from "./OtherSection/ContactSection.tsx";
 
 const HomePage = () => {
   return (
     <div>
       <HeroSection />
       <ServiceList />
-      <LookupSection />
+      <ContactSection />
       <AboutSection />
       <RecommendedSection />
-      <ContactSection />
+      <InformationSection />
     </div>
   );
 };

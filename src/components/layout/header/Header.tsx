@@ -10,12 +10,10 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center">
           <img src={Logo} alt="Vận tải Bắc Nam" className="h-12 w-auto" />
         </div>
 
-        {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
           <a href="/" className="hover:text-blue-600">
             Trang chủ
@@ -37,7 +35,6 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Mobile Menu Toggle Button */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -45,7 +42,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <nav className="md:hidden bg-white px-4 py-2 shadow">
           <ul className="space-y-3 text-sm font-medium text-gray-700">

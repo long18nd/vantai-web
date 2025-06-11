@@ -4,7 +4,7 @@ interface ToastProps {
   message: string;
   type: "success" | "error";
   onClose: () => void;
-  duration?: number; // Optional: how long the toast should be visible in ms
+  duration?: number;
 }
 
 const Toast: React.FC<ToastProps> = ({
@@ -18,16 +18,16 @@ const Toast: React.FC<ToastProps> = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-      onClose(); // Call onClose after the toast disappears
+      onClose();
     }, duration);
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, [duration, onClose]);
 
   const bgColor = type === "success" ? "bg-green-500" : "bg-red-500";
   const textColor = "text-white";
   const shadow = "shadow-lg";
-  const position = "fixed top-4 right-4 z-50"; // Top right corner
+  const position = "fixed top-4 right-4 z-50";
 
   if (!isVisible) return null;
 

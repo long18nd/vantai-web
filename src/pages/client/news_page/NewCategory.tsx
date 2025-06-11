@@ -1,4 +1,3 @@
-// NewCategory.tsx
 import NewCard from "./NewCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -8,7 +7,7 @@ export interface NewCardProps {
   title: string;
   describe: string;
   date: string;
-  // Bạn có thể thêm id hoặc slug ở đây để tạo link chi tiết
+  // thêm id hoặc slug ở đây để tạo link chi tiết
   // id: string;
   // slug: string;
 }

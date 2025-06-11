@@ -1,7 +1,7 @@
 import PhoneIcon from "../../../../assets/imgs/icon_phone.png";
 import TimeIcon from "../../../../assets/imgs/icon_time.png";
 import SupIcon from "../../../../assets/imgs/icon_support.png";
-import MailIcon from "../../../../assets/imgs/icon_mail.png"; // Đã sửa đường dẫn icon mail
+import MailIcon from "../../../../assets/imgs/icon_mail.png";
 import Background from "../../../../assets/imgs/background.png";
 
 const ContactSection = () => {
