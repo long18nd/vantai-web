@@ -1,6 +1,8 @@
-export default interface Category {
+interface Category {
   id: number;
   name: string;
-  slug: string; // Chuỗi thân thiện với URL, duy nhất
-  description?: string; // Mô tả danh mục, có thể null
+  slug: string;
+  createdAt: string;
 }
+
+export default Category;

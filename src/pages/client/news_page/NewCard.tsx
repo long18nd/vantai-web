@@ -1,6 +1,9 @@
-import type { NewCardProps } from "./NewCategory";
+// src/components/News/NewCard.tsx
 
-const NewCard = ({ date, describe, img, title }: NewCardProps) => {
+import { Link } from "react-router-dom";
+import type { NewCardProps } from "../../../type/new";
+
+const NewCard = ({ date, describe, img, title, slug }: NewCardProps) => {
   return (
     <div className="flex flex-col border border-gray-200 rounded-lg shadow-sm overflow-hidden h-full">
       <div className="w-full h-40 overflow-hidden flex-shrink-0">
@@ -17,13 +20,13 @@ const NewCard = ({ date, describe, img, title }: NewCardProps) => {
         <div className="text-xs text-gray-500 mb-4">{date}</div>
 
         <div className="mt-auto">
-          <a
-            href="#"
+          <Link
+            to={`/news/${slug}`}
             className="text-blue-600 hover:text-blue-800 text-sm font-medium"
           >
-            <span>Xem thêm </span>
+            <span>Xem chi tiết </span>
             <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

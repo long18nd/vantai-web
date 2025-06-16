@@ -1,15 +1,25 @@
-type New = {
-  id: string;
-  createdAt: string;
+// src/type/new.d.ts
+
+import type Category from "./category"; // Import Category từ file category.d.ts
+
+export type New = {
+  id: number;
   title: string;
-  slug?: string; // Tùy chọn, nếu bạn có slug cho URL
-  category: string;
-  author: string;
-  thumbnailUrl: string;
-  description: string; // Có thể hiển thị hoặc không trên bảng
-  content: string; // Có thể hiển thị hoặc không trên bảng
-  views: number;
-  status: "draft" | "published" | "archived"; // Ví dụ về các trạng thái
+  slug: string;
+  content: string; // Nội dung đầy đủ của bài viết
+  thumbnailUrl: string; // URL ảnh từ backend
+  created_at: string; // Ngày tạo từ backend
+  categoryId: number; // ID của category
+  category: Category; // Đối tượng category đầy đủ
 };
 
-export default New;
+export interface NewCardProps {
+  id: number;
+  img: string; // Sẽ ánh xạ từ 'thumbnailUrl'
+  title: string;
+  describe: string; // Sẽ ánh xạ từ 'content' hoặc một trường 'description' khác
+  date: string; // Sẽ ánh xạ từ 'created_at'
+  slug: string;
+  content?: string; // Tùy chọn: nội dung đầy đủ (cho NewDetail, không phải NewCard)
+  category?: Category; // **ĐÃ THÊM TRƯỜNG NÀY ĐỂ KHẮC PHỤC LỖI TYPESCRIPT**
+}

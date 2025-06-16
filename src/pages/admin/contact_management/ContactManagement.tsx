@@ -6,57 +6,92 @@ import { IoEyeSharp } from "react-icons/io5";
 const ContactManagement = () => {
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/contacts")
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchContacts = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/contacts");
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.message || "Failed to fetch contacts.");
+        }
+        const data: Contact[] = await response.json();
+        console.log("Fetched contacts data:", data);
         setContacts(data);
+      } catch (err: any) {
+        console.error("Error fetching contacts:", err);
+        setError(err.message || "Không thể tải dữ liệu liên hệ.");
+      } finally {
         setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching contacts:", error);
-        setLoading(false);
-      });
+      }
+    };
+
+    fetchContacts();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="p-6 bg-white rounded shadow text-center">
+        <p>Đang tải dữ liệu...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-6 bg-red-100 border border-red-400 text-red-700 rounded shadow">
+        <p>Lỗi: {error}</p>
+        <p>Vui lòng đảm bảo backend đang chạy và kết nối đúng.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="p-6 bg-white rounded shadow">
       <h2 className="text-xl font-bold mb-4">Quản lý liên hệ</h2>
 
-      {loading ? (
-        <p>Đang tải dữ liệu...</p>
-      ) : (
-        <div className="overflow-auto">
-          <table className="w-full table-auto border-collapse">
-            <thead className="bg-gray-100">
+      <div className="overflow-x-auto">
+        <table className="w-full table-auto border-collapse">
+          <thead className="bg-gray-100">
+            <tr>
+              <th className="border p-2 text-left">Ngày đăng ký</th>
+              <th className="border p-2 text-left">Tên KH / Công ty</th>
+              <th className="border p-2 text-left">SĐT</th>
+              <th className="border p-2 text-left">Email</th>
+              <th className="border p-2 text-left">Mặt hàng</th>
+              <th className="border p-2 text-left">Trọng lượng</th>
+              <th className="border p-2 text-left">Nơi gửi</th>
+              <th className="border p-2 text-left">Nơi nhận</th>
+              <th className="border p-2 text-left">Ghi chú</th>
+              <th className="border p-2 text-center">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            {contacts.length === 0 ? (
               <tr>
-                <th className="border p-2">Ngày đăng ký</th>
-                <th className="border p-2">Tên KH / Công ty</th>
-                <th className="border p-2">SĐT</th>
-                <th className="border p-2">Email</th>
-                <th className="border p-2">Mặt hàng</th>
-                <th className="border p-2">Trọng lượng</th>
-                <th className="border p-2">Nơi gửi</th>
-                <th className="border p-2">Nơi nhận</th>
-                <th className="border p-2">Ghi chú</th>
-                <th className="border p-2">Thao tác</th>
+                <td colSpan={10} className="text-center p-4">
+                  Không có dữ liệu liên hệ
+                </td>
               </tr>
-            </thead>
-            <tbody>
-              {contacts.map((contact) => (
+            ) : (
+              contacts.map((contact) => (
                 <tr key={contact.id} className="hover:bg-gray-50">
                   <td className="border p-2">
-                    {new Date(contact.createdAt).toLocaleString()}
+                    {new Date(contact.created_at).toLocaleString()}
                   </td>
-                  <td className="border p-2">{contact.customerName}</td>
+                  <td className="border p-2">{contact.name}</td>{" "}
                   <td className="border p-2">{contact.phone}</td>
                   <td className="border p-2">{contact.email}</td>
-                  <td className="border p-2">{contact.itemName}</td>
-                  <td className="border p-2">{contact.weight}</td>
-                  <td className="border p-2">{contact.fromAddress}</td>
-                  <td className="border p-2">{contact.toAddress}</td>
-                  <td className="border p-2">{contact.note}</td>
+                  <td className="border p-2">{contact.item || "N/A"}</td>{" "}
+                  <td className="border p-2">{contact.weight || "N/A"}</td>{" "}
+                  <td className="border p-2">
+                    {contact.sending_address || "N/A"}
+                  </td>{" "}
+                  <td className="border p-2">
+                    {contact.receiving_address || "N/A"}
+                  </td>{" "}
+                  <td className="border p-2">{contact.note || "N/A"}</td>{" "}
                   <td className="border p-2 text-center">
                     <Link
                       to={`/admin/lien-he/${contact.id}`}
@@ -67,18 +102,11 @@ const ContactManagement = () => {
                     </Link>
                   </td>
                 </tr>
-              ))}
-              {contacts.length === 0 && (
-                <tr>
-                  <td colSpan={9} className="text-center p-4">
-                    Không có dữ liệu
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      )}
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

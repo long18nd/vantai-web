@@ -1,18 +1,11 @@
+// src/components/News/NewCategory.tsx
+
 import NewCard from "./NewCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import type { NewCardProps } from "../../../type/new";
 
-export interface NewCardProps {
-  img: string;
-  title: string;
-  describe: string;
-  date: string;
-  // thêm id hoặc slug ở đây để tạo link chi tiết
-  // id: string;
-  // slug: string;
-}
-
-interface NewCategoryProps {
+export interface NewCategoryProps {
   categoryName: string;
   listCard?: NewCardProps[] | [];
 }
@@ -32,6 +25,12 @@ const NewCategory = ({ categoryName, listCard }: NewCategoryProps) => {
     );
   }
 
+  // Tạo ID duy nhất cho navigation buttons
+  const categoryId = categoryName
+    .replace(/[^a-zA-Z0-9-]/g, "")
+    .replace(/\s+/g, "-")
+    .toLowerCase();
+
   return (
     <div className="mb-8 relative group">
       <h2 className="text-xl font-bold text-gray-700 mb-4 uppercase flex items-center">
@@ -40,26 +39,32 @@ const NewCategory = ({ categoryName, listCard }: NewCategoryProps) => {
       </h2>
       <Swiper
         modules={[Navigation]}
-        spaceBetween={24}
+        spaceBetween={20}
         slidesPerView={1}
         navigation={{
-          prevEl: `#swiper-button-prev-${categoryName.replace(/\s+/g, "-")}`,
-          nextEl: `#swiper-button-next-${categoryName.replace(/\s+/g, "-")}`,
+          prevEl: `#swiper-button-prev-${categoryId}`,
+          nextEl: `#swiper-button-next-${categoryId}`,
         }}
         breakpoints={{
           640: {
             slidesPerView: 2,
+            spaceBetween: 20,
           },
           768: {
             slidesPerView: 3,
+            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 4,
+            spaceBetween: 25,
           },
         }}
+        className="mySwiper"
       >
-        {listCard.map((card, idx) => (
-          <SwiperSlide key={idx}>
+        {listCard.map((card) => (
+          <SwiperSlide key={card.id}>
+            {" "}
+            {/* Sử dụng card.id làm key duy nhất */}
             <NewCard {...card} />
           </SwiperSlide>
         ))}
@@ -67,9 +72,9 @@ const NewCategory = ({ categoryName, listCard }: NewCategoryProps) => {
       {listCard.length > 4 && (
         <>
           <div
-            id={`swiper-button-prev-${categoryName.replace(/\s+/g, "-")}`}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 
-                       bg-white p-2 rounded-full shadow-md cursor-pointer 
+            id={`swiper-button-prev-${categoryId}`}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10
+                       bg-white p-2 rounded-full shadow-md cursor-pointer
                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
                        hidden md:block"
           >
@@ -89,9 +94,9 @@ const NewCategory = ({ categoryName, listCard }: NewCategoryProps) => {
             </svg>
           </div>
           <div
-            id={`swiper-button-next-${categoryName.replace(/\s+/g, "-")}`}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 
-                       bg-white p-2 rounded-full shadow-md cursor-pointer 
+            id={`swiper-button-next-${categoryId}`}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10
+                       bg-white p-2 rounded-full shadow-md cursor-pointer
                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
                        hidden md:block"
           >
